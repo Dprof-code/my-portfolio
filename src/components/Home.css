@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+:root {
+    --primary-color: #101630;
+    --secondary-color: #50B8DE;
+    --accent-color: #ffcc00;
+    --background-color: #f0f0f0;
+    --text-color: #333333;
+    --font-family: 'Inter', sans-serif;
+    --fancy-font-family: 'Playfair Display', serif;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    padding: 2rem;
+    color: white;
+}
+
+.home-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.intro-text {
+    font-family: var(--font-family);
+    font-size: 2rem;
+}
+
+.fancy-text {
+    font-family: var(--fancy-font-family);
+    font-size: 4rem;
+}
+
+.home-button {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.home-button:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .home-title {
+        font-size: 1.5rem;
+    }
+
+    .intro-text {
+        font-size: 1.5rem;
+    }
+
+    .fancy-text {
+        font-size: 2.5rem;
+    }
+
+    .home-button {
+        font-size: 0.875rem;
+        padding: 0.5rem 1rem;
+    }
+}
