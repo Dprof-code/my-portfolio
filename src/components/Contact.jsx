@@ -15,11 +15,17 @@ const Contact = () => {
           <div className="contact-details">
             <div className="contact-detail">
               <FaPhone className="contact-icon" />
-              <span>+2348168082347</span>
+              <span>
+                <a href="tel:+2348168082347">+2348168082347</a>
+              </span>
             </div>
             <div className="contact-detail">
               <FaEnvelope className="contact-icon" />
-              <span>olawaleade15@gmail.com</span>
+              <span>
+                <a href="mailto:olawaleade15@gmail.com">
+                  olawaleade15@gmail.com
+                </a>
+              </span>
             </div>
           </div>
         </div>
