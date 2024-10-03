@@ -24,7 +24,7 @@ const techStacks = [
 
 const TechStacks = () => {
   return (
-    <section className="tech-stacks">
+    <section id="experience" className="tech-stacks">
       <h2 className="tech-stacks-header">Experience</h2>
       <div className="tech-stacks-container">
         {techStacks.map((tech, index) => (

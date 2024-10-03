@@ -40,7 +40,9 @@ const NavBar = () => {
         <li className="menu-item">
           <a href="#experience">Experience</a>
         </li>
-        <li className="menu-item contact-button">Contact</li>
+        <li className="menu-item contact-button">
+          <a href="#contact">Contact</a>
+        </li>
       </ul>
     </nav>
   );

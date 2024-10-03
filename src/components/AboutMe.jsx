@@ -6,7 +6,7 @@ const AboutMe = () => {
       <div className="about-me-left">
         <div className="image-frame">
           <img
-            src="/picture.jpg"
+            src="/Adedamola_Olawale_Abraham.jpg"
             alt="Adedamola Olawale"
             className="about-me-image"
           />
@@ -21,8 +21,17 @@ const AboutMe = () => {
           and always eager to learn new things.
         </p>
         <div className="about-me-buttons">
-          <button className="about-me-button hire-me">Hire Me</button>
-          <button className="about-me-button resume">Resume</button>
+          <a href="#contact" className="about-me-button hire-me">
+            Hire Me
+          </a>
+          <a
+            href="/resume/Adedamola Olawale - FullStack Developer.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="about-me-button resume"
+          >
+            Resume
+          </a>
         </div>
       </div>
     </section>

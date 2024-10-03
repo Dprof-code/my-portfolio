@@ -17,7 +17,10 @@
     background-color: var(--primary-color);
     color: white;
     margin: 0;
-    /* Remove spacing around nav */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .logo {
@@ -35,6 +38,7 @@
 .menu {
     list-style: none;
     display: flex;
+    align-items: center;
     gap: 1.5rem;
     transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
     max-height: 0;
