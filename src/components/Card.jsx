@@ -1,4 +1,5 @@
 import "./Services.css";
+import PropTypes from "prop-types";
 
 const Card = ({ title, description, icon }) => {
   return (
@@ -13,3 +14,9 @@ const Card = ({ title, description, icon }) => {
 };
 
 export default Card;
+
+Card.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string,
+  icon: PropTypes.object,
+};

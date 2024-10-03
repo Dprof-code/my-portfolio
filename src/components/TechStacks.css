@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #101630;
+    --secondary-color: #50B8DE;
+    --accent-color: #ffcc00;
+    --background-color: #f0f0f0;
+    --text-color: #333333;
+    --font-family: 'Inter', sans-serif;
+}
+
+.tech-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    margin: 1rem;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.tech-stack:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tech-stack-image {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.tech-stack-title {
+    font-size: 1.2rem;
+    font-family: var(--font-family);
+    color: var(--primary-color);
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .tech-stack {
+        width: 100%;
+        max-width: 150px;
+        flex: 1 1 calc(20% - 1rem);
+    }
+
+    .tech-stack-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .tech-stack-title {
+        font-size: 1rem;
+    }
+}
+
+.tech-stacks {
+    padding: 2rem;
+    text-align: center;
+}
+
+.tech-stacks-header {
+    font-size: 2.5rem;
+    font-family: var(--font-family);
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
+
+.tech-stacks-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .tech-stacks-container {
+        align-items: center;
+    }
+}
