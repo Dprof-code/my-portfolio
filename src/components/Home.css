@@ -46,13 +46,12 @@
 
 .catch-texts {
     margin-bottom: 2rem;
-    font-family: "Poppins", sans-serif;
 }
 
 .headline {
     font-size: 2rem;
     font-weight: bold;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-family);
 }
 
 .tagline {
