@@ -22,8 +22,6 @@ const techStacks = [
   { title: "Node.js", image: "/tech-stacks/nodejs.png" },
   { title: "Software Development", image: "/tech-stacks/software.png" },
   { title: "Linux", image: "/tech-stacks/linux.png" },
-  { title: "Bash Scripting", image: "/tech-stacks/terminal.png" },
-  { title: "Zapier Integration", image: "/tech-stacks/integration.png" },
 ];
 
 const TechStacks = () => {
