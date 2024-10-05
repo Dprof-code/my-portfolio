@@ -12,7 +12,7 @@ const projects = [
     image: "/projects/project-1.png",
   },
   {
-    title: "Project Two",
+    title: "Car Rentals Website",
     description: "Description of project two.",
     technologies: ["Angular", "Express", "Sass"],
     codeLink: "#",
