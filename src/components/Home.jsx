@@ -4,7 +4,7 @@ import Reveal from "./Reveal"; // Import the Reveal component
 
 const Home = () => {
   return (
-    <section id="home" className="home">
+    <section id="home" className="container home">
       <div className="text-contents">
         <h1 className="home-title">
           <span className="greeting">Hi, My name is Abraham,</span>
@@ -38,22 +38,7 @@ const Home = () => {
             typeSpeed={50}
             typedRef={function noRefCheck() {}}
           />
-          {/* <span className="fancy-text">Fullstack</span>
-          <br /> <span className="fancy-text">Software</span>
-          <br />{" "}
-          <span className="fancy-text">
-            Developer<span className="dot">.</span>
-          </span> */}
         </h1>
-        <Reveal side="top">
-          <div className="catch-texts">
-            <p className="headline">Your Digital Transformation Partner:</p>
-            <p className="tagline">
-              Providing Optimized Business Solutions,
-              <br /> One Line of {"<Code/>"} at a Time...
-            </p>
-          </div>
-        </Reveal>
         <Reveal side="left">
           <a href="#portfolio" className="home-button">
             Previous Projects
@@ -62,7 +47,11 @@ const Home = () => {
       </div>
       <Reveal className="hero-img-container" side="right">
         <div>
-          <img className="hero-img" src="/hero-1-nobg.png" alt="Hero Image" />
+          <img
+            className="hero-img"
+            src="/web-images/hero-1-nobg.png"
+            alt="Hero Image"
+          />
         </div>
       </Reveal>
     </section>

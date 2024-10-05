@@ -11,7 +11,7 @@ const stats = [
 
 const Counters = () => {
   return (
-    <section className="counter">
+    <section className="counter container">
       <div className="counters-container">
         {stats.map((stat, index) => (
           <Reveal key={index} side="top">

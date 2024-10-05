@@ -10,7 +10,7 @@ import Logo from "./Logo";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="container footer">
       <div className="footer-logo">
         <Logo />
         {/* <img src="/logo.png" alt="ProDevX Tech Logo" className="logo-image" /> */}

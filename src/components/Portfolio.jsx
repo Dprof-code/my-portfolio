@@ -32,7 +32,7 @@ const Portfolio = () => {
   };
 
   return (
-    <section id="portfolio" className="portfolio">
+    <section id="portfolio" className="container portfolio">
       <h2 className="portfolio-header">Portfolio</h2>
       {projects
         .slice(0, showAll ? projects.length : 2)

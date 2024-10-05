@@ -107,9 +107,18 @@
 .view-url {
     background-color: var(--accent-color);
     color: var(--primary-color);
-    padding: 0.25rem 1rem;
-    border-radius: 30px;
-    font-size: 0.875rem;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.view-url:hover {
+    background-color: var(--secondary-color);
+    color: white;
 }
 
 .project-image-frame {

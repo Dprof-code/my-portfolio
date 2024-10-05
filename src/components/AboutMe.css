@@ -20,6 +20,18 @@
     margin-top: 4rem;
 }
 
+.headline {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: var(--font-family);
+}
+
+.tagline {
+    font-size: 1rem;
+    font-family: var(--font-family);
+    font-style: italic;
+}
+
 .about-me-left {
     flex: 1;
     display: flex;
@@ -30,9 +42,7 @@
 .image-frame {
     position: relative;
     width: 500px;
-    /* Increased size */
     height: 500px;
-    /* Increased size */
     border: 5px solid var(--accent-color);
     transform: rotate(-5deg);
 }
@@ -83,10 +93,9 @@
 }
 
 @media (max-width: 768px) {
-
     .image-frame {
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
     }
 
     .about-me {
@@ -102,6 +111,16 @@
 
     .about-me-right {
         padding: 1rem;
+    }
+
+    .headline {
+        font-size: 1.25rem;
+        line-height: 1.5;
+    }
+
+    .tagline {
+        font-size: 0.875rem;
+        line-height: 1.5;
     }
 
     .about-me-header {

@@ -5,7 +5,6 @@ import "./Counters.css";
 const Count = ({ count, title }) => {
   return (
     <div className="count-container">
-      {/* <div className="count">{count}+</div> */}
       <CountUp
         className="count"
         delay={0}
