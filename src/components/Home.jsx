@@ -1,5 +1,7 @@
 import "./Home.css";
 
+// tsparticles/react
+
 const Home = () => {
   return (
     <section id="home" className="home">
@@ -10,7 +12,10 @@ const Home = () => {
           <span className="intro-text">I&apos;m a</span> <br />
           <span className="fancy-text">Fullstack</span>
           <br /> <span className="fancy-text">Software</span>
-          <br /> <span className="fancy-text">Developer.</span>
+          <br />{" "}
+          <span className="fancy-text">
+            Developer<span className="dot">.</span>
+          </span>
         </h1>
         <div className="catch-texts">
           <p className="headline">Your Digital Transformation Partner:</p>
