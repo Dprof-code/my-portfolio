@@ -53,8 +53,8 @@
     background-color: white;
     border-radius: 10px;
     padding: 1.5rem;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: 1px solid transparent;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -94,6 +94,7 @@
     text-align: justify;
     font-size: 1rem;
     color: var(--text-color);
+    line-height: 1.5;
 }
 
 @media (max-width: 768px) {
@@ -105,5 +106,6 @@
     .service-box {
         width: 100%;
         max-width: 300px;
+        height: auto;
     }
 }

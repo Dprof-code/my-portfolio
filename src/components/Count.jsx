@@ -9,7 +9,6 @@ const Count = ({ count, title }) => {
       <CountUp
         className="count"
         delay={0}
-        start={1}
         end={count}
         duration={2.75}
         suffix=" +"

@@ -1,7 +1,28 @@
 import "./Contact.css";
 import { FaPhone, FaEnvelope } from "react-icons/fa";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_sqynfxs", "template_2h73hj5", form.current, {
+        publicKey: "i06qDOmpxvJDv0Q_C",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
+
   return (
     <section id="contact" className="contact">
       <h2 className="contact-header">Contact</h2>
@@ -30,17 +51,17 @@ const Contact = () => {
           </div>
         </div>
         <div className="contact-right">
-          <form className="contact-form">
+          <form ref={form} onSubmit={sendEmail} className="contact-form">
             <input
               type="text"
-              name="name"
+              name="from_name"
               placeholder="Name"
               className="contact-input"
               required
             />
             <input
               type="email"
-              name="email"
+              name="from_email"
               placeholder="Email"
               className="contact-input"
               required
