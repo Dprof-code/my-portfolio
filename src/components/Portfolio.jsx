@@ -52,14 +52,16 @@ const Portfolio = () => {
                     </span>
                   ))}
                 </div>
-                <a
-                  href={project.liveLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="view-url"
-                >
-                  Live Preview
-                </a>
+                {project.liveLink != "#" && (
+                  <a
+                    href={project.liveLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="view-url"
+                  >
+                    Live Preview
+                  </a>
+                )}
               </div>
             </Reveal>
             <Reveal side={index % 2 === 0 ? "right" : "left"}>
