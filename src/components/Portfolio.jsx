@@ -52,16 +52,6 @@ const Portfolio = () => {
                     </span>
                   ))}
                 </div>
-                {project.liveLink != "#" && (
-                  <a
-                    href={project.liveLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="view-url"
-                  >
-                    Live Preview
-                  </a>
-                )}
               </div>
             </Reveal>
             <Reveal side={index % 2 === 0 ? "right" : "left"}>
@@ -72,6 +62,16 @@ const Portfolio = () => {
                   className="project-image"
                 />
               </div>
+              {project.liveLink != "#" && (
+                <a
+                  href={project.liveLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="view-url"
+                >
+                  Live Preview
+                </a>
+              )}
             </Reveal>
           </div>
         ))}
