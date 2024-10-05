@@ -1,5 +1,6 @@
 import "./Counters.css";
 import Count from "./Count";
+import Reveal from "./Reveal"; // Import the Reveal component
 
 const stats = [
   { title: "Years of Experience", count: 5 },
@@ -13,7 +14,9 @@ const Counters = () => {
     <section className="counter">
       <div className="counters-container">
         {stats.map((stat, index) => (
-          <Count key={index} title={stat.title} count={stat.count} />
+          <Reveal key={index} side="top">
+            <Count title={stat.title} count={stat.count} />
+          </Reveal>
         ))}
       </div>
     </section>
