@@ -21,7 +21,7 @@ const Home = () => {
           <p className="headline">Your Digital Transformation Partner:</p>
           <p className="tagline">
             Providing Optimized Business Solutions,
-            <br /> One Line of Code at a Time...
+            <br /> One Line of {"<Code/>"} at a Time...
           </p>
         </div>
         <a href="#portfolio" className="home-button">

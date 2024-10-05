@@ -2,25 +2,19 @@ import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import particlesConfig from "./config/particles-config";
 import { loadFull } from "tsparticles";
+import { loadSlim } from "tsparticles-slim";
 
 const ParticlesBackground = () => {
-  //   const particlesInit = async (main) => {
-  //     console.log(main);
-  //     await loadFull(main);
-  //   };
-
-  //   const particlesLoaded = (container) => {
-  //     console.log(container);
-  //   };
-
   const particlesInit = useCallback(async (engine) => {
-    // console.log(engine);
+    console.log(engine);
 
-    await loadFull(engine);
+    await loadSlim(engine);
+
+    // await loadFull(engine);
   }, []);
 
   const particlesLoaded = useCallback(async (container) => {
-    await console.log(container);
+    console.log(container);
   }, []);
 
   return (
