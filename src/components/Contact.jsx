@@ -1,6 +1,6 @@
 import "./Contact.css";
 import { FaPhone, FaEnvelope } from "react-icons/fa";
-import React, { useRef } from "react";
+import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
@@ -43,8 +43,8 @@ const Contact = () => {
             <div className="contact-detail">
               <FaEnvelope className="contact-icon" />
               <span>
-                <a href="mailto:olawaleade15@gmail.com">
-                  olawaleade15@gmail.com
+                <a href="mailto:devabrahamtech@gmail.com">
+                  devabrahamtech@gmail.com
                 </a>
               </span>
             </div>

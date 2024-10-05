@@ -20,7 +20,7 @@ const Footer = () => {
       </div>
       <div className="footer-social">
         <a
-          href="https://facebook.com"
+          href="https://facebook.com/olawale.adedamola1"
           target="_blank"
           rel="noopener noreferrer"
           className="social-icon"
@@ -52,7 +52,7 @@ const Footer = () => {
           <FaGithub />
         </a>
         <a
-          href="https://wa.me/yourwhatsappnumber"
+          href="https://wa.me/+2349025846456"
           target="_blank"
           rel="noopener noreferrer"
           className="social-icon"

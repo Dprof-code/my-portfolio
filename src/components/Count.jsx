@@ -10,7 +10,7 @@ const Count = ({ count, title }) => {
         className="count"
         delay={0}
         end={count}
-        duration={2.75}
+        duration={2}
         suffix=" +"
         enableScrollSpy={true}
       />
