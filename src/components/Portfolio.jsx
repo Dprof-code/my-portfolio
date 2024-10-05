@@ -4,7 +4,7 @@ import Reveal from "./Reveal"; // Import the Reveal component
 
 const projects = [
   {
-    title: "Project One",
+    title: "Hybrid Meme Crypto Website",
     description: "Description of project one.",
     technologies: ["React", "Node.js", "CSS"],
     codeLink: "#",
