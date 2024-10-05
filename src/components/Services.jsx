@@ -15,6 +15,7 @@ import {
   FaChalkboardTeacher,
 } from "react-icons/fa";
 import { useState } from "react";
+import Reveal from "./Reveal"; // Import the Reveal component
 
 const services = [
   {
@@ -123,12 +124,13 @@ const Services = () => {
         {services
           .slice(0, showAll ? services.length : 4)
           .map((service, index) => (
-            <Card
-              key={index}
-              title={service.title}
-              description={service.description}
-              icon={service.icon}
-            />
+            <Reveal key={index} side="top">
+              <Card
+                title={service.title}
+                description={service.description}
+                icon={service.icon}
+              />
+            </Reveal>
           ))}
       </div>
       <button className="view-all-button" onClick={handleToggle}>

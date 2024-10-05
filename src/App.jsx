@@ -10,14 +10,6 @@ import Footer from "./components/Footer";
 import Counters from "./components/Counters";
 import ParticlesBackground from "./components/ParticlesBackground";
 
-//Framer motion
-
-// // React
-// import { motion } from "framer-motion";
-
-// // React Server Components
-// import * as motion from "framer-motion/client";
-
 function App() {
   return (
     <>

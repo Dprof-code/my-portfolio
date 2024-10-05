@@ -1,5 +1,6 @@
 import TechStack from "./TechStack";
 import "./TechStacks.css";
+import Reveal from "./Reveal"; // Import the Reveal component
 
 const techStacks = [
   { title: "WordPress", image: "/tech-stacks/wordpress.png" },
@@ -31,7 +32,9 @@ const TechStacks = () => {
       <h2 className="tech-stacks-header">Experience</h2>
       <div className="tech-stacks-container">
         {techStacks.map((tech, index) => (
-          <TechStack key={index} title={tech.title} image={tech.image} />
+          <Reveal key={index} side="top">
+            <TechStack title={tech.title} image={tech.image} />
+          </Reveal>
         ))}
       </div>
     </section>

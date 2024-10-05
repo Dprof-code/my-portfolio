@@ -1,3 +1,4 @@
+import { cn } from "../lib/utils";
 import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
 import PropTypes from "prop-types";
@@ -36,7 +37,7 @@ const Reveal = ({
   const variants = { top, left, right }[side];
 
   return (
-    <div style={{ position: "relative", width }} className={className}>
+    <div style={{ position: "relative", width }} className={cn(className)}>
       <motion.div
         ref={ref}
         variants={variants}

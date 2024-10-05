@@ -1,5 +1,6 @@
 import "./Portfolio.css";
 import { useState } from "react";
+import Reveal from "./Reveal"; // Import the Reveal component
 
 const projects = [
   {
@@ -27,6 +28,7 @@ const Portfolio = () => {
   const handleToggle = () => {
     setShowAll(!showAll);
   };
+
   return (
     <section id="portfolio" className="portfolio">
       <h2 className="portfolio-header">Portfolio</h2>
@@ -37,38 +39,36 @@ const Portfolio = () => {
             className={`project ${index % 2 === 0 ? "left" : "right"}`}
             key={index}
           >
-            <div className="project-content">
-              <h3 className="project-title">{project.title}</h3>
-              <p className="project-description">{project.description}</p>
-              <div className="project-technologies">
-                {project.technologies.map((tech, techIndex) => (
-                  <span className="tech-icon" key={techIndex}>
-                    {tech}
-                  </span>
-                ))}
+            <Reveal side={index % 2 === 0 ? "left" : "right"}>
+              <div className="project-content">
+                <h3 className="project-title">{project.title}</h3>
+                <p className="project-description">{project.description}</p>
+                <div className="project-technologies">
+                  {project.technologies.map((tech, techIndex) => (
+                    <span className="tech-icon" key={techIndex}>
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                <a
+                  href={project.liveLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="view-url"
+                >
+                  Live Preview
+                </a>
               </div>
-              <a
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                className="view-url"
-              >
-                Live Preview
-              </a>
-              {/* <div className="project-buttons">
-              <button className="project-button code-button">Code</button>
-              <button className="project-button live-button">
-                Live Preview
-              </button>
-            </div> */}
-            </div>
-            <div className="project-image-frame">
-              <img
-                src={project.image}
-                alt={project.title}
-                className="project-image"
-              />
-            </div>
+            </Reveal>
+            <Reveal side={index % 2 === 0 ? "right" : "left"}>
+              <div className="project-image-frame">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="project-image"
+                />
+              </div>
+            </Reveal>
           </div>
         ))}
       <button className="view-all-button" onClick={handleToggle}>
