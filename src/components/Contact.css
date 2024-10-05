@@ -23,10 +23,12 @@
 }
 
 .contact-container {
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 2rem;
+    padding: 2rem;
 }
 
 .contact-left,
@@ -38,14 +40,14 @@
 .contact-title {
     font-size: 1.5rem;
     font-family: var(--font-family);
-    color: var(--primary-color);
+    color: #f7f7f7;
     margin-bottom: 1rem;
     text-align: left;
 }
 
 .contact-description {
     font-size: 1rem;
-    color: var(--text-color);
+    color: #f7f7f7;
     margin-bottom: 2rem;
     text-align: left;
 }
@@ -54,6 +56,7 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    color: #f7f7f7;
 }
 
 .contact-detail {
@@ -61,7 +64,7 @@
     align-items: center;
     gap: 0.5rem;
     font-size: 1rem;
-    color: var(--text-color);
+    color: #f7f7f7;
 }
 
 .contact-icon {
@@ -103,11 +106,24 @@
 @media (max-width: 768px) {
     .contact-container {
         flex-direction: column;
-        align-items: center;
+        justify-content: space-between;
+        flex: 0 1 calc(100% - 1rem);
     }
 
     .contact-left,
     .contact-right {
         width: 100%;
+        flex: 0 1 calc(100% - 1rem);
     }
+
+    .contact-right {
+        flex: 1 0 100% !important;
+        width: 100% !important;
+    }
+
+    .contact-right div {
+        flex: 1 0 100% !important;
+    }
+
+
 }

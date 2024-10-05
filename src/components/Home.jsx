@@ -7,7 +7,7 @@ const Home = () => {
     <section id="home" className="home">
       <div className="text-contents">
         <h1 className="home-title">
-          <span className="greeting">Hi,</span>
+          <span className="greeting">Hi, My name is Abraham,</span>
           <br />
           <span className="intro-text">I&apos;m a</span> <br />
           <ReactTyped

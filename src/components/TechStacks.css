@@ -34,7 +34,7 @@
 .tech-stack-title {
     font-size: 1.2rem;
     font-family: var(--font-family);
-    color: var(--text-color);
+    color: #f7f7f7;
     text-align: center;
     line-height: 0.8;
 }
