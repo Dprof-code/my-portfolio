@@ -10,12 +10,6 @@
     --fancy-font-family: 'Playfair Display', serif;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: var(--font-family);
-}
-
 .home {
     display: flex;
     flex-direction: row;
@@ -128,9 +122,8 @@ body {
 
     .hero-img-container {
         max-width: 100%;
-        margin-top: 5rem;
+        margin-top: 4rem;
         order: 1;
-        /* Change order on mobile */
     }
 }
 
