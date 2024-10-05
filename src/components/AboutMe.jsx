@@ -5,14 +5,12 @@ const AboutMe = () => {
   return (
     <section id="about" className="about-me">
       <Reveal className="about-me-left" side="left">
-        <div>
-          <div className="image-frame">
-            <img
-              src="/img-3.jpg"
-              alt="Adedamola Olawale"
-              className="about-me-image"
-            />
-          </div>
+        <div className="image-frame">
+          <img
+            src="/img-3.jpg"
+            alt="Adedamola Olawale"
+            className="about-me-image"
+          />
         </div>
       </Reveal>
       <Reveal className="about-me-right" side="right">
