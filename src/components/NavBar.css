@@ -7,6 +7,7 @@
     --background-color: #f0f0f0;
     --text-color: #333333;
     --font-family: 'Inter', sans-serif;
+    --custom-font-family: 'ProximaNova', sans-serif;
 }
 
 .navbar {
@@ -21,12 +22,6 @@
     top: 0;
     width: 100%;
     z-index: 1000;
-}
-
-.logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    font-family: var(--font-family);
 }
 
 .menu-icon {

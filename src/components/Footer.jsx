@@ -6,16 +6,14 @@ import {
   FaGithub,
   FaWhatsapp,
 } from "react-icons/fa";
+import Logo from "./Logo";
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-logo">
-        <img
-          src="path/to/logo.png"
-          alt="ProDevX Tech Logo"
-          className="logo-image"
-        />
+        <Logo />
+        {/* <img src="/logo.png" alt="ProDevX Tech Logo" className="logo-image" /> */}
       </div>
       <div className="footer-text">
         <p>2024 - ProDevX Tech, All rights reserved</p>
@@ -30,7 +28,7 @@ const Footer = () => {
           <FaFacebook />
         </a>
         <a
-          href="https://twitter.com"
+          href="https://twitter.com/pr0devs"
           target="_blank"
           rel="noopener noreferrer"
           className="social-icon"
@@ -38,7 +36,7 @@ const Footer = () => {
           <FaTwitter />
         </a>
         <a
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/adedamola-olawale-b9b1641a2"
           target="_blank"
           rel="noopener noreferrer"
           className="social-icon"
@@ -46,7 +44,7 @@ const Footer = () => {
           <FaLinkedin />
         </a>
         <a
-          href="https://github.com"
+          href="https://github.com/dprof-code"
           target="_blank"
           rel="noopener noreferrer"
           className="social-icon"

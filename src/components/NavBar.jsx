@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./NavBar.css";
+import Logo from "./Logo";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,7 +15,7 @@ const NavBar = () => {
 
   return (
     <nav className="navbar">
-      <div className="logo">ProDevX</div>
+      <Logo />
       {isMenuOpen ? (
         <div className="close-button" onClick={closeMenu}>
           &times;

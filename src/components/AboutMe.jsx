@@ -30,7 +30,7 @@ const AboutMe = () => {
             rel="noopener noreferrer"
             className="about-me-button resume"
           >
-            Resume
+            My Resume
           </a>
         </div>
       </div>

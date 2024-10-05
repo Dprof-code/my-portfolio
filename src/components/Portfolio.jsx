@@ -31,7 +31,7 @@ const Portfolio = () => {
     <section id="portfolio" className="portfolio">
       <h2 className="portfolio-header">Portfolio</h2>
       {projects
-        .slice(0, showAll ? projects.length : 4)
+        .slice(0, showAll ? projects.length : 2)
         .map((project, index) => (
           <div
             className={`project ${index % 2 === 0 ? "left" : "right"}`}
@@ -47,6 +47,14 @@ const Portfolio = () => {
                   </span>
                 ))}
               </div>
+              <a
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                className="view-url"
+              >
+                Live Preview
+              </a>
               {/* <div className="project-buttons">
               <button className="project-button code-button">Code</button>
               <button className="project-button live-button">

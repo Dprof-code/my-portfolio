@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+@import url('https: //fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
     --primary-color: #101630;
@@ -10,18 +10,32 @@
     --fancy-font-family: 'Playfair Display', serif;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+}
+
 .home {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     height: 100vh;
     padding: 2rem;
     color: white;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.text-contents {
+    max-width: 50%;
+    animation: fadeInLeft 1s ease-in-out;
 }
 
 .home-title {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 1.5rem;
     line-height: 1.2;
 }
@@ -33,7 +47,24 @@
 
 .fancy-text {
     font-family: var(--fancy-font-family);
-    font-size: 4rem;
+    font-size: 5rem;
+}
+
+.catch-texts {
+    margin-bottom: 2rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.headline {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+}
+
+.tagline {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
 }
 
 .home-button {
@@ -46,6 +77,7 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    text-decoration: none;
 }
 
 .home-button:hover {
@@ -53,9 +85,31 @@
     color: white;
 }
 
+.hero-img-container {
+    max-width: 50%;
+    animation: fadeInRight 1s ease-in-out;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+}
+
 @media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .text-contents {
+        max-width: 100%;
+        order: 2;
+        /* Change order on mobile */
+    }
+
     .home-title {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .intro-text {
@@ -69,5 +123,36 @@
     .home-button {
         font-size: 0.875rem;
         padding: 0.5rem 1rem;
+    }
+
+    .hero-img-container {
+        max-width: 100%;
+        margin-top: 2rem;
+        order: 1;
+        /* Change order on mobile */
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
     }
 }

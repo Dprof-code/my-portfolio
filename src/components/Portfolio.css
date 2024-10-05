@@ -101,6 +101,11 @@
     color: white;
 }
 
+.view-url {
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+
 .project-image-frame {
     position: relative;
     width: 300px;

@@ -7,6 +7,9 @@ import Services from "./components/Services";
 import TechStacks from "./components/TechStacks";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Counters from "./components/Counters";
+
+//Framer motion
 
 function App() {
   return (
@@ -17,6 +20,7 @@ function App() {
       <main>
         <Home />
         <AboutMe />
+        <Counters />
         <Portfolio />
         <Services />
         <TechStacks />

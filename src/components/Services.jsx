@@ -34,6 +34,11 @@ const services = [
     description: "Creating software solutions tailored to your business needs.",
   },
   {
+    icon: <FaRocket />,
+    title: "Website Deployment",
+    description: "Deploying your website to live servers with best practices.",
+  },
+  {
     icon: <FaPaintBrush />,
     title: "Front-End Web Development",
     description: "Designing user-friendly and visually appealing interfaces.",
@@ -54,11 +59,6 @@ const services = [
     title: "Website Management",
     description:
       "Managing and maintaining your website for optimal performance.",
-  },
-  {
-    icon: <FaRocket />,
-    title: "Website Deployment",
-    description: "Deploying your website to live servers with best practices.",
   },
   {
     icon: <FaTools />,
@@ -110,7 +110,7 @@ const Services = () => {
       <h2 className="services-header">Services</h2>
       <div className="service-grid">
         {services
-          .slice(0, showAll ? services.length : 6)
+          .slice(0, showAll ? services.length : 4)
           .map((service, index) => (
             <Card
               key={index}
