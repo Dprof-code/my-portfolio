@@ -6,7 +6,7 @@ const AboutMe = () => {
       <div className="about-me-left">
         <div className="image-frame">
           <img
-            src="/Adedamola_Olawale_Abraham.jpg"
+            src="/img-3.jpg"
             alt="Adedamola Olawale"
             className="about-me-image"
           />
