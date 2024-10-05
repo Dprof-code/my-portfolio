@@ -5,23 +5,24 @@ import Reveal from "./Reveal"; // Import the Reveal component
 const projects = [
   {
     title: "Hybrid Meme Crypto Website",
-    description: "A fun and engaging website built for a meme-based cryptocurrency project, featuring real-time price tracking and community-driven content.",
-    technologies: ["React", "Node.js", "CSS"],
+    description:
+      "A fun and engaging website built for a meme-based cryptocurrency project, featuring real-time price tracking and community-driven content.",
+    technologies: ["React", "CSS", "ChartJS", "ThirdWeb"],
     codeLink: "#",
-    liveLink: "#",
+    liveLink: "https://hybridmemuspace.netlify.app",
     image: "/projects/project-1.png",
   },
   {
     title: "Car Rentals Website",
-    description: "A fully functional car rental platform, allowing users to browse available cars, make bookings, and manage reservations online.",
-    technologies: ["Angular", "Express", "Sass"],
+    description:
+      "A fully functional car rental platform, allowing users to browse available cars, make bookings, and manage reservations online.",
+    technologies: ["Wordpress", "Elementor", "CSS"],
     codeLink: "#",
     liveLink: "#",
     image: "/projects/project-2.png",
   },
   // Add more projects as needed
 ];
-
 
 const Portfolio = () => {
   const [showAll, setShowAll] = useState(false);
