@@ -5,7 +5,7 @@ import Reveal from "./Reveal"; // Import the Reveal component
 const projects = [
   {
     title: "Hybrid Meme Crypto Website",
-    description: "Description of project one.",
+    description: "A fun and engaging website built for a meme-based cryptocurrency project, featuring real-time price tracking and community-driven content.",
     technologies: ["React", "Node.js", "CSS"],
     codeLink: "#",
     liveLink: "#",
@@ -13,7 +13,7 @@ const projects = [
   },
   {
     title: "Car Rentals Website",
-    description: "Description of project two.",
+    description: "A fully functional car rental platform, allowing users to browse available cars, make bookings, and manage reservations online.",
     technologies: ["Angular", "Express", "Sass"],
     codeLink: "#",
     liveLink: "#",
@@ -21,6 +21,7 @@ const projects = [
   },
   // Add more projects as needed
 ];
+
 
 const Portfolio = () => {
   const [showAll, setShowAll] = useState(false);
