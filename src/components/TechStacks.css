@@ -78,5 +78,6 @@
 @media (max-width: 768px) {
     .tech-stacks-container {
         align-items: center;
+        gap: 1rem;
     }
 }
