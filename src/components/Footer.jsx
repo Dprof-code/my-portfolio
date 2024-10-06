@@ -15,9 +15,6 @@ const Footer = () => {
         <Logo />
         {/* <img src="/logo.png" alt="ProDevX Tech Logo" className="logo-image" /> */}
       </div>
-      <div className="footer-text">
-        <p>2024 - ProDevX Tech, All rights reserved</p>
-      </div>
       <div className="footer-social">
         <a
           href="https://facebook.com/olawale.adedamola1"
@@ -59,6 +56,9 @@ const Footer = () => {
         >
           <FaWhatsapp />
         </a>
+      </div>
+      <div className="footer-text">
+        <p>2024 - ProDevX Tech, All rights reserved</p>
       </div>
     </footer>
   );
