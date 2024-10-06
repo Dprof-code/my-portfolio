@@ -1,5 +1,5 @@
 import "./AboutMe.css";
-import Reveal from "./Reveal"; // Import the Reveal component
+import Reveal from "./Reveal";
 
 const AboutMe = () => {
   return (
