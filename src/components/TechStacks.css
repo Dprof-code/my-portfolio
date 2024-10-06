@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 150px;
+    max-width: 150px;
     margin: 1rem;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
@@ -41,9 +41,10 @@
 
 @media (max-width: 768px) {
     .tech-stack {
+        margin: 0.5rem;
         width: 100%;
         max-width: 150px;
-        flex: 1 1 calc(15% - 1rem);
+        flex: 1 1 calc(10% - 1rem);
     }
 
     .tech-stack-image {
@@ -77,6 +78,7 @@
 
 @media (max-width: 768px) {
     .tech-stacks-container {
+        justify-content: flex-start;
         align-items: center;
         gap: 1rem;
     }
